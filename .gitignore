@@ -1,0 +1,4 @@
+react-three/build/
+react-three/node_modules/
+react-three-renderer/build/
+react-three-renderer/node_modules/
