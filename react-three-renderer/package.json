@@ -20,10 +20,10 @@
   "dependencies": {
     "babel-polyfill": "^6.0.16",
     "flux": "^2.1.1",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "react-three-renderer": "0.0.12-alpha",
-    "three": "^0.73.0"
+    "three.js": "^0.73.0"
   },
   "scripts": {
     "server": "ws",

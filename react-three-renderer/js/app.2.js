@@ -1,13 +1,13 @@
 require('babel-polyfill');
 
-import Simple from './simple';
+import App from './components/app.react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 window.onload = function(){
 
   ReactDOM.render(
-    <Simple />,
+    <App />,
     document.getElementById('app')
   );
 };

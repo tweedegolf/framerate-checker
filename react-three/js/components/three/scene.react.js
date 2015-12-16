@@ -1,6 +1,7 @@
 import React from 'react';
 //import ReactTHREE from 'react-three';
 import ReactTHREE from '../../../lib/react-three-commonjs';
+import OrbitControls from '../../../lib/OrbitControls';
 import THREE from 'three';
 import World from './world.react';
 import ParsedModel from '../../util/parsed_model';

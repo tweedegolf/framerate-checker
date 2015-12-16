@@ -1,6 +1,6 @@
 import React from 'react';
 import React3 from 'react-three-renderer';
-import THREE from 'three';
+import THREE from 'three.js';
 import Model from './model.react';
 import Globals from '../../globals';
 import ParsedModel from '../../util/parsed_model';
@@ -20,7 +20,9 @@ class World extends React.Component{
     let w = (
       <object3D quaternion={this.worldRotation}>
         <mesh
+          key={THREE.Math.generateUUID()}
           position={this.props.position}
+          scale={this.props.scale}
         >
           <planeBufferGeometry
             widthSegments={10}
@@ -34,15 +36,19 @@ class World extends React.Component{
             side={THREE.DoubleSide}
           />
         </mesh>
+
+        <Model
+          model={this.props.model}
+          position={new THREE.Vector3()}
+          scale={1}
+        />
       </object3D>
     );
     //console.log(w);
     return w;
   }
-        // <Model
-        //   model={this.props.model}
-        // />
 }
+
 
 World.propTypes = {
   model: React.PropTypes.instanceOf(ParsedModel),

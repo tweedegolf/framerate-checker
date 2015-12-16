@@ -35,6 +35,7 @@ class World extends React.Component{
           key={THREE.Math.generateUUID()}
           model={this.props.model}
           position={new THREE.Vector3()}
+          scale={1}
         />
       </Object3D>
     );

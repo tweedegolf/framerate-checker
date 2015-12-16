@@ -39,10 +39,10 @@ class SceneComponent extends React.Component {
             lookAt={new THREE.Vector3(0, 0, 0)}
           />
           <ambientLight
-            color={new THREE.Color(0x333333)}
+            color={0x333333}
           />
           <directionalLight
-            color={new THREE.Color(0xFFFFFF)}
+            color={0xffffff}
             intensity={1.5}
           />
           <World

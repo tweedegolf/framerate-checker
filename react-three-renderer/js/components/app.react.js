@@ -23,7 +23,7 @@ class App extends React.Component{
   componentDidMount() {
     ModelsStore.addChangeListener(this.onChangeListener);
     window.addEventListener('resize', this._onResize);
-    //ModelsAction.loadModel();
+    ModelsAction.loadModel();
   }
 
   componentWillUnmount() {
@@ -33,10 +33,12 @@ class App extends React.Component{
 
   onChange(){
     let state = ModelsStore.getSettings();
+    //console.log('state change', state);
     this.setState(state);
   }
 
   render(){
+    console.log('render');
     return(
       <div>
         <Scene3D

@@ -1,4 +1,4 @@
-import THREE from 'three';
+import THREE from 'three.js';
 //import React from 'react';
 //import ReactTHREE from 'react-three';
 
@@ -27,8 +27,8 @@ export default class ParsedModel{
         this.materialIndices.set(uuid, index++);
         this.materialsArray.push(child.material);
         this.geometries.set(uuid, child.geometry);
-        console.log(child.geometry)
-        console.log(child.material)
+        //console.log(child.geometry)
+        //console.log(child.material)
       }
     });
     console.log('number of geometries merged', index);

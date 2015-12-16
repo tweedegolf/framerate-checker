@@ -49,12 +49,16 @@ class ModelsStore extends EventEmitter {
     switch(action.type) {
 
       case ActionTypes.LOAD_MODEL:
-        let loader = new THREE.ObjectLoader();
-        loader.load('../models/bbq.json', (model) => {
-          model.scale.set(1, 1, 1);
-          this.model = new ParsedModel(model, quaternion);
+        setTimeout(() => {
+          this.model = null;
           this.emitChange();
-        });
+        }, 5000);
+        // let loader = new THREE.ObjectLoader();
+        // loader.load('../models/zitbank.json', (model) => {
+        //   //model.scale.set(1, 1, 1);
+        //   this.model = null;//new ParsedModel(model, quaternion);
+        //   this.emitChange();
+        // });
         break;
 
       case ActionTypes.RESIZE:
