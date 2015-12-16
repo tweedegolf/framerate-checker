@@ -1,8 +1,4 @@
 import THREE from 'three.js';
-//import React from 'react';
-//import ReactTHREE from 'react-three';
-
-//let Mesh = ReactTHREE.Mesh;
 
 export default class ParsedModel{
 
@@ -43,54 +39,5 @@ export default class ParsedModel{
     });
 
     this.mergedGeometry = new THREE.BufferGeometry().fromGeometry(merged);
-
   }
-
-
-  /*
-    I don't think the 2 metods below should be in this class
-    -> these are methods that should be in the accompanying React component, model.react.js in this case
-  */
-
-  /*
-
-  getReactComponent(position, scale){
-    let children = [];
-    this.geometries.forEach((geometry, uuid) => {
-      let material = this.materialsArray[this.materialIndices.get(uuid)];
-      //console.log(this.materialIndices.get(uuid), material);
-      children.push(
-        <Mesh
-          key={uuid}
-          geometry={geometry}
-          material={material}
-        />
-      );
-    });
-
-    return (
-      <Mesh
-        key={THREE.Math.generateUUID()}
-        quaternion={this.quaternion}
-        position={position}
-        scale={scale}
-      >
-        {children}
-      </Mesh>
-    );
-  }
-
-  getMergedReactComponent(position, scale){
-    return (
-      <Mesh
-        geometry={this.mergedGeometry}
-        key={THREE.Math.generateUUID()}
-        material={this.material}
-        position={position}
-        scale={scale}
-      />
-    );
-  }
-
-  */
 }

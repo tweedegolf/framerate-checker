@@ -25,3 +25,51 @@
 />
 
 {merged_geometry} and {multi_material} are THREE.js objects
+
+
+
+
+
+<group> // container or group (small caps!)
+  <mesh
+    position={new THREE.Vector3()}
+  >
+    <geometry
+      vertices={vertices}
+      faces={faces}
+    />
+    <meshLambertMaterial
+      color={new THREE.Color()}
+    />
+  </mesh>
+
+  <mesh
+    position={new THREE.Vector3()}
+  >
+    <boxGeometry
+      width={1}
+      height={1}
+      depth={1}
+    />
+    <meshBasicMaterial
+      color={new THREE.Color()}
+      side={not supported!}
+      opacity={not supported!}
+    />
+  </mesh>
+</group>
+
+
+
+
+
+<mesh
+  <geometry
+    vertices={merged_geometry_vertices}
+    faces={merged_geometry_faces}
+  />
+  <meshFaceMaterial
+    not supported!
+  />
+/>
+

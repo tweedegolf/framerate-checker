@@ -44,7 +44,6 @@ class Model3D extends React.Component {
           />
         );
     }
-
     return m;
   }
 
