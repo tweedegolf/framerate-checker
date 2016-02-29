@@ -129,7 +129,7 @@ class Simple extends React.Component {
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    return (<React3
+    let r = (<React3
       mainCamera="camera"
       width={width}
       height={height}
@@ -149,6 +149,9 @@ class Simple extends React.Component {
         {this.getModel()}
       </scene>
     </React3>);
+
+    console.log(r);
+    return r;
   }
 }
 /*
