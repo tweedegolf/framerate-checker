@@ -1,4 +1,4 @@
-### Framerate checker in React
+### Framerate checker using React bindings for Three.js
 
 Shows the frame rate when a multitude of 3D models is loaded. You can also merge the geometries of the loaded models to test whether the performance increases or not.
 
